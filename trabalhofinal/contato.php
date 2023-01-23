@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Contato </title>
+		
+		<style>
+			
+			#formulario{
+				text-align: left;
+				margin: 0;
+				font-family: Tahoma;
+			}
+			
+			.direita{
+				float: right;
+				width: 50%;
+			}
+			
+			.esquerda{
+				float: left;
+				width: 50%;
+			}
+			
+			#formulario label{
+				line-height:30px;
+				text-align: left;
+				color: #363636;
+			}
+			
+			#formulario input{
+				padding: 9px;
+				border: 1px solid #CCCCCC;
+				background: #E8EFE4;
+				border-radius: 4px;
+				color: #363636;
+			}
+			
+			#formulario .botao{
+				background-color: #45543D;
+				color: #FFF;
+			}
+			
+			#formulario .botao:hover{
+				background-color: #354030;
+			}
+			
+			
+			
+			
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<center><h1> Contato </h1></center>
+		<hr>
+		
+		<div id="formulario">
+			
+			<form action="salvarcontato.php" method = "post">
+			
+				<div class="esquerda">
+					<label for="nome"> Nome Completo: </label><br>
+					<input type="text" name="nome" size="35" placeholder="Nome Completo">
+				</div>
+				
+                <div class="data direita">
+					<label for="dt_nasc"> Data de Nascimento: </label><br>
+					<input type="text" name="data" size="25" placeholder="__/__/__">
+				</div>
+
+				<div class="direita">
+					<label for="telefone"> Telefone: </label><br>
+					<input type="text" name="telefone" size="35" placeholder="(00)00000-0000">
+				</div>
+				
+				<br>
+				
+				<input type="submit" value = "Cadastrar" class="botao" style="margin-top: 20px">
+				<input type="reset" value = "Limpar" class="botao">
+				
+				
+				
+			</form>
+			
+		</div>
+	
+	</body>
+</html>
